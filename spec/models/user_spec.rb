@@ -13,7 +13,7 @@ require 'spec_helper'
 
 describe User do
   before do
-    @user = User.new(:name => 'Bob', :email => 'bob@gmail.com')
+    @user = User.new(:name => 'Bob', :email => 'bob@gmail.com', )
   end
 
   it "should have a name" do
