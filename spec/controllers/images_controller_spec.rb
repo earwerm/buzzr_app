@@ -14,7 +14,7 @@ describe ImagesController do
       end
     end
 
-      describe "as JSON" do
+    describe "as JSON" do
       before do
         get :index, :format => :json
       end
@@ -27,10 +27,21 @@ describe ImagesController do
       it "should give content type JSON" do
        expect(response.content_type).to eq('application/json')
       end
+    end
+  end
 
-      #it "should parse as JSON" do
-       #lambda { JSON.parse(response.body) }.should_not raise_error
-      #end
+  describe 'GET to show' do
+    before do
+      @image = Image.new
+    end
+
+    it "should render the show template" do
+      get :show, {:id => @image.id}
+      expect(response).to render_template("show")
+    end
+
+    it "should place the image on the page" do
+      expect(response).to be_success
     end
   end
 end

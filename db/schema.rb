@@ -11,9 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20130802073703) do
-
 
   create_table "images", force: true do |t|
     t.datetime "created_at"
@@ -27,14 +25,11 @@ ActiveRecord::Schema.define(version: 20130802073703) do
     t.float    "longitude"
   end
 
-<<<<<<< HEAD
   create_table "sessions", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-=======
->>>>>>> cb2e842f3ddc18248385089d6e62999a4dfa3efe
   create_table "tweets", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"

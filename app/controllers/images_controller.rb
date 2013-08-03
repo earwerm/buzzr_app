@@ -5,4 +5,8 @@ class ImagesController < ApplicationController
       format.json { render :json => @images }
     end
   end
+
+  def show
+    @image
+  end
 end

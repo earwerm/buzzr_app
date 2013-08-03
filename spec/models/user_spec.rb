@@ -23,5 +23,14 @@ describe User do
   it "should have an email" do
     @user.email.should eq('bob@gmail.com')
   end
+
+  it "should validate presence of email and name" do
+    @user.name.should_not eq(nil)
+    @user.email.should_not eq(nil)
+  end
+
+  it "should have many locations" do
+    @user.locations(:id).should_not eq(0)
+  end
 end
 
