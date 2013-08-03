@@ -8,6 +8,12 @@
 #
 
 class Image < ActiveRecord::Base
-  def image
+  attr_accessor :latitude, :longitude, :id, :name
+
+  def initialize
+    @latitude = 44.0
+    @longitude = 69.0
+    @name = "Fishburners"
+    @id = 123456
   end
 end

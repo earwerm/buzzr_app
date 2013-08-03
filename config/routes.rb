@@ -1,5 +1,5 @@
 BuzzrApp::Application.routes.draw do
   root :to => 'home#index'
 
-  resources :images
+  resources :images, :locations, :users
 end
