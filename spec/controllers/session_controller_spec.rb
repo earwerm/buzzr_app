@@ -1,25 +1,24 @@
 require 'spec_helper'
 
 describe SessionController do
-  describe "#create" do
-    before do
+  describe "Creating a session" do
+    before(:each) do
+      User.stub
+    end
+
+    it "should check if a user is present" do
       get :create
-      @user = User.new(:name => 'Bob', :email => 'bob@gmail.com', :password => 'a', :password_confirmation => 'a' )
-      @user.save
     end
 
-    context "given user is present" do
+    it "should redirect to the root path" do
+      response.should redirect_to(root_path)
     end
 
-      it "should redirect to the root path" do
-        expect(response).to redirect_to(root_path)
-      end
-
-    context "given user is not present" do
+    it "given user is not present" do
     end
 
-      it "should redirect to login path" do
-        expect(response).to redirect_to(login_path)
+    it "redirects to login path" do
+      response.should redirect_to(login_path)
     end
   end
 end
