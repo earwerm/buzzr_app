@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>P3</title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
+<head>
+  <title>P3</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
 <!-- INSERT GOOGLE MAPS API SCRIPT -->
-  </head>
-  <body>
-
-  <%= yield %>
-
-  </body>
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE'] %>&sensor=false">
+  </script>
+</head>
+<body>
+<%= yield %>
+</body>
 </html>

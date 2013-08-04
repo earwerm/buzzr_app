@@ -15,7 +15,6 @@ class HomeController < ApplicationController
     # end
     render :json => @result
   end
-end
 
 # step by step
 # 1. create form to enter location => locale = params[:locale]
@@ -25,3 +24,7 @@ end
 # 3. feed lat lng to HTTParty request
 # 4. pass returned JSON object to AJAX for rendering via draw_points function
 # 5. integrate google maps into the draw_points function
+
+  def map
+  end
+end

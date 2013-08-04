@@ -64,8 +64,8 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
-    faraday (0.8.7)
-      multipart-post (~> 1.1)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
     geocoder (1.1.8)
@@ -92,7 +92,7 @@ GEM
       callsite
       rack-contrib
       railties
-    method_source (0.8.1)
+    method_source (0.8.2)
     mime-types (1.23)
     multi_json (1.7.7)
     multipart-post (1.2.0)
@@ -107,9 +107,9 @@ GEM
       pry (~> 0.9.10)
     pry-rails (0.3.2)
       pry (>= 0.9.10)
-    pry-stack_explorer (0.4.9)
+    pry-stack_explorer (0.4.9.1)
       binding_of_caller (>= 0.7)
-      pry (~> 0.9.11)
+      pry (>= 0.9.11)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.4.5)
