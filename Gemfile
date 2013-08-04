@@ -11,7 +11,7 @@ end
 gem 'sqlite3'
 
 gem 'protected_attributes'
-
+gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'instagram'
 
 
