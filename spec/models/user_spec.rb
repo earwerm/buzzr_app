@@ -26,11 +26,7 @@ describe User do
   end
 
   it "should have a password" do
-    @user.password.should eq('a')
-  end
-
-  it "should confirm password" do
-    @user.password_confirmation.should eq('a')
+    @user.password_digest.should be
   end
 
   it "should validate presence of email and name" do

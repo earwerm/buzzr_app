@@ -6,7 +6,7 @@ describe ImagesController do
 
     describe 'as HTML' do
       before do
-        get:index
+        get :index
       end
 
       it "should give us the index template" do
