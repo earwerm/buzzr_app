@@ -1,5 +1,28 @@
-#map_canvas {
-  border: 10px solid red;
-  height: 650px;
-  width: 1200px;
+
+body {
+  margin: 0;
 }
+
+#map_canvas {
+  height: 700px;
+  width: 100%;
+}
+
+#container {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  top: 1px;
+  left: 80px;
+  font-size: 110%;
+
+}
+
+#search {
+
+  font-size: 110%;
+
+}
+
