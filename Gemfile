@@ -9,8 +9,16 @@ end
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+gem 'protected_attributes'
+gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'instagram'
+<<<<<<< HEAD
 gem 'geocoder'
+=======
+gem 'haml'
+
+>>>>>>> aebcfa96e91ae37e4959a77778b5a3568a2079ef
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
