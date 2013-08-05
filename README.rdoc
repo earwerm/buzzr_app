@@ -1,34 +1,9 @@
-<<<<<<< HEAD
 Desired layout features:
-
 Use MODAL
-=======
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
->>>>>>> 181f99d6db8827061c900780dbf6b1cdcafc468d
+TODO:
+instagram.js
+- Center map on new location from search
+- reset map markers on new search
+- get more than 20 results
+- render instagram image on click/hover
