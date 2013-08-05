@@ -3,19 +3,6 @@ class LandingController < ApplicationController
   def index
   end
 
-  def points
-
-    locale = params[:locale]
-
-    lat = GEOCODEBLAH
-    lng = GEOCODEBLAH
-    url = "https://api.instagram.com/v1/locations/search.json?lat=#{lat.round(4)}&lng=#{lng.round(4)}&client_id=efea46f4c52542348ced4c529263cf33"
-    @result = HTTParty.get url
-    # @result.data.each do |locale|
-    #   Location.create(locale.latitude, locale.longitude)
-    # end
-    render :json => @result
-  end
 
 # step by step
 # 1. create form to enter location => locale = params[:locale]

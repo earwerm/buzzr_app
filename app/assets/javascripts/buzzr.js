@@ -5,7 +5,7 @@ var display_map = function (lat, long, zoom) {
   canvas = $('#map_canvas')[0];
 
   if (!canvas)
-    return; // I QUIT
+    return;
 
   var mapOptions = {
     center: new google.maps.LatLng(lat, long),

@@ -3,10 +3,11 @@
 # Table name: locations
 #
 #  id         :integer          not null, primary key
-#  created_at :datetime
-#  updated_at :datetime
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #  latitude   :float
 #  longitude  :float
+#  address    :string(255)
 #
 
 require 'spec_helper'
