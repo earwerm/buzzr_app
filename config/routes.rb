@@ -4,14 +4,14 @@ BuzzrApp::Application.routes.draw do
   resources :users, :only => [:index, :new, :create]
 
   resources :locations, :only => [:index, :create]
-    collection do
-      get :???
-    end
+    #collection do
+    #  get :???
+    #end
 
   resources :images, :only => [:index, :show, :new]
-    collection do
-      get :???
-    end
+    #collection do
+    #  get :???
+    #end
 
   get '/map' => 'home#map'
   get '/login' => 'session#new'
