@@ -3,18 +3,20 @@ require 'spec_helper'
 describe SessionController do
   describe "Creating a session" do
     before(:each) do
-      User.stub
+      get :create
+      User.stub(:email)
     end
 
-    it "should check if a user is present" do
-      get :create
+    it "given a user is present" do
+      response.should_not be_nil
     end
 
     it "should redirect to the root path" do
       response.should redirect_to(root_path)
     end
 
-    it "given user is not present" do
+    context "given a user is not present" do
+
     end
 
     it "redirects to login path" do
