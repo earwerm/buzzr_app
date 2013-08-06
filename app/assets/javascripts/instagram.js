@@ -30,6 +30,7 @@ var results = function() {};
 var map;
 var canvas;
 
+// centers map on first JSON object result
 var center_map = function (lat,long) {
  var position = new google.maps.LatLng(lat, long);
  map.setCenter(position);
@@ -59,5 +60,12 @@ var add_marker = function (lat, long, title) {
 
 $(document).ready(function () {
   // displays map with sydney cbd as location upon document loading
-  display_map(-33.89336, 151.217167, 13);
+  display_map(-33.89336, 151.217167, 17);
+
+  $('#buttonz').click(function(){
+    $('#popup').modal({
+  keyboard: false
+      });
+    // HELP: cant get this to work with bootstrap
+  });
 });

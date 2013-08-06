@@ -1,9 +1,15 @@
 Desired layout features:
 Use MODAL
 
+Desired Features overall:
+
+- Create floating div that shows broader location of map;
+- upon login, user can see search results from previous search
 TODO:
 instagram.js
-- Center map on new location from search
+- Center map on new location from search (DONE)
 - reset map markers on new search
 - get more than 20 results
 - render instagram image on click/hover
+- twitter and facebook location pins
+- animated recentering ala GOOGLE EARTH
