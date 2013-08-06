@@ -5,10 +5,14 @@ P3::Application.routes.draw do
   resources :location, :only => [:index, :new, :create] do
   end
 
+  get '/map' => 'home#map'
   get '/points/:locale' => 'home#points'
+
+  get '/photo/:id/' => 'landing#photo'
+  get '/landing' => 'landing#index'
+
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
-  get '/landing' => 'landing#index'
-  get '/map' => 'home#map'
+
 end

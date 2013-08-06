@@ -13,3 +13,21 @@ instagram.js
 - render instagram image on click/hover
 - twitter and facebook location pins
 - animated recentering ala GOOGLE EARTH
+
+- integrate another API ala YELP,
+
+
+
+TIPS:
+
+You can detect iPhone and Android devices by inspecting the navigator.userAgent property within the DOM:
+
+
+STEPS:
+
+1. change click handler target to marker instead of canvas
+2. get id (traverse dom), make it available as a variable
+3. hTTParty request for ID : media
+4. publish media in a div
+OPTIONAL extras:
+- Create a div with a list of ID's, name and image;
