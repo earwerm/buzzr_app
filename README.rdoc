@@ -1,28 +1,52 @@
-== README
+TODO LIST:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+7/8/13
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Create home page for new users with basic intro and call to action. (MC)
+- Convert existing reg/sign into modal (MC)
+- UI Colour scheme (MC)
+- Update placeholder to include location format (MC)
+- Connect reg and sign in buttons (MC)
+---
+- Create floating div with list of results, that states the name of the current view (TM)
+- Error handling (TM)
+- Data validation (TM)
+- Jasmine test (TM)
+---
+- Takes users current location as search result (SM)
+- Map colour scheme (SM)
+- Select logo that works with map background(SM)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+-------------------------------
+Desired layout features:
+Use MODAL (DONE)
+
+Desired Features overall:
+- Create floating div that shows broader location of map;
+- Upon login, user can see search results from previous search
+
+TODO:
+instagram.js
+- Center map on new location from search (DONE)
+- reset map markers on new search
+- get more than 20 results (ATTEMPTED)
+- render instagram image on click/hover (DONE)
+- twitter and facebook location pins (NOT YET)
+- animated recentering ala GOOGLE EARTH (NOT YET)
+
+- integrate another API ala YELP,
+
+TIPS:
+You can detect iPhone and Android devices by inspecting the navigator.userAgent property within the DOM:
+
+STEPS:
+
+1. change click handler target to marker instead of canvas
+2. get id (traverse dom), make it available as a variable
+3. hTTParty request for ID : media
+4. publish media in a div
+
+OPTIONAL extras:
+- Create a div with a list of ID's, name and image;

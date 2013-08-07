@@ -1,0 +1,56 @@
+/* UNIVERSAL COLOURS */
+
+$orange: #E13E06;
+$green: #2ECC71;
+$blue: #4099FF;
+$darkpink: #D9014F;
+$mould: #A9AB19;
+$white: #fff;
+$red: #FF0000;
+$yellow: #EFAE1B;
+$pink: #EE3246;
+$lightpink: #E86275;
+$black: #000;
+
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 80px;
+  font-family: Helvetica Neue, "Helvetica", Arial, Times New Roman;
+/*  background: $yellow;*/
+}
+
+.navbar{
+background: $darkpink;
+height: 50px;
+list-style: none;
+color: white;
+display: inline-block;
+}
+
+h1, h3, .form-group {
+ color: $darkpink;
+}
+
+.btn {
+ color: $darkpink;
+}
+
+#map_canvas {
+  height: 650px;
+  width: 1200px;
+  border: solid $darkpink;
+  margin: 80px;
+}
+
+.address_form {
+  display: inline-block;
+}
+
+.list_results {
+min-height: 650px;
+min-width: 100px;
+border: solid $darkpink;
+margin: 80px;
+}
