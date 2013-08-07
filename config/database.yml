@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: p3_development
+  database: buzzr_app_development
   pool: 5
   username: michaelcorrea
   host: localhost
