@@ -40,13 +40,6 @@ GEM
     builder (3.0.4)
     callsite (0.0.11)
     coderay (1.0.9)
-    coffee-rails (3.2.2)
-      coffee-script (>= 2.2.0)
-      railties (~> 3.2.0)
-    coffee-script (2.2.0)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.6.3)
     columnize (0.3.6)
     debug_inspector (0.0.2)
     debugger (1.6.1)
@@ -68,18 +61,9 @@ GEM
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
-<<<<<<< HEAD
     geocoder (1.1.8)
     haml (4.0.3)
       tilt
-=======
-<<<<<<< HEAD
-    geocoder (1.1.8)
-=======
-    haml (4.0.3)
-      tilt
->>>>>>> aebcfa96e91ae37e4959a77778b5a3568a2079ef
->>>>>>> 5071e94ac7a0dd8464f6ec23c07b81e16581b4ad
     hashie (2.0.5)
     hike (1.2.3)
     httparty (0.11.0)
@@ -100,14 +84,14 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meta_request (0.2.7)
+    meta_request (0.2.8)
       callsite
       rack-contrib
       railties
     method_source (0.8.2)
     mime-types (1.23)
-    multi_json (1.7.7)
-    multi_xml (0.5.4)
+    multi_json (1.7.8)
+    multi_xml (0.5.5)
     multipart-post (1.2.0)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -163,11 +147,6 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    sass (3.2.10)
-    sass-rails (3.2.6)
-      railties (~> 3.2.0)
-      sass (>= 3.1.10)
-      tilt (~> 1.3)
     shoulda-matchers (2.2.0)
       activesupport (>= 3.0.0)
     simplecov (0.7.1)
@@ -196,22 +175,12 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bcrypt-ruby (~> 3.0.0)
-<<<<<<< HEAD
   better_errors
   binding_of_caller
-  coffee-rails (~> 3.2.1)
   factory_girl_rails (~> 4.0)
   geocoder
   haml
   httparty
-=======
-  coffee-rails (~> 4.0.0)
-<<<<<<< HEAD
-  geocoder
-=======
-  haml
->>>>>>> aebcfa96e91ae37e4959a77778b5a3568a2079ef
->>>>>>> 5071e94ac7a0dd8464f6ec23c07b81e16581b4ad
   instagram
   jquery-rails
   machinist (>= 2.0.0.beta2)
@@ -223,7 +192,6 @@ DEPENDENCIES
   quiet_assets
   rails (= 3.2.13)
   rspec-rails
-  sass-rails (~> 3.2.3)
   shoulda-matchers
   simplecov
-  uglifier (>= 1.0.3)
+  uglifier (>= 1.3.0)

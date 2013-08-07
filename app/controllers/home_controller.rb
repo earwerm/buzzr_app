@@ -1,10 +1,8 @@
 class HomeController < ApplicationController
   def index
-
   end
 
-<<<<<<< HEAD
-# takes the form data from _form partial on homepath
+# takes the form data from form partial on homepath
   def points
     locale = Location.create( :address => params[:locale] )
     lat = locale.latitude.to_f
@@ -15,13 +13,9 @@ class HomeController < ApplicationController
     @result = HTTParty.get url
 # makes the json data available for ajax
     render :json => @result
-=======
-<<<<<<< HEAD
+  end
+
+  def map
+  end
 
 end
-=======
-  def map
->>>>>>> 5071e94ac7a0dd8464f6ec23c07b81e16581b4ad
-  end
-end
->>>>>>> aebcfa96e91ae37e4959a77778b5a3568a2079ef
