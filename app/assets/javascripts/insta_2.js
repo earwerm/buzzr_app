@@ -18,6 +18,7 @@ $(document).ready(function () {
             $.each(results.data, function (i, l) {
                 add_marker(l.latitude, l.longitude, l.name, l.id);
                 // makes all 4 elements available to dependent function
+                listrender(l);
             });
             // centers map using first object lat and long
             center_map(results.data[0].latitude, results.data[0].longitude);
@@ -65,11 +66,11 @@ var add_marker = function (lat, long, title, id) {
         title: title,
         icon: '/assets/instagram-shadow.png'
     });
-
+    // pushes the marker data into empty array marker_list
+    // marker_list.push(marker);
     marker.setValues({
         id: id
     });
-
     console.log('marker for', title, 'id', id);
     // Event handler for marker clicking/listening
     google.maps.event.addListener(marker, 'click', function (event) {
@@ -81,33 +82,4 @@ $(document).ready(function () {
     // displays map with sydney cbd as location upon document loading
     display_map(-33.89336, 151.217167, 17);
 
-    // TINKERING WITH INFOWINDOW BELOW HERE:
-    // var latlng = new google.maps.LatLng(-33.89336, 151.217167);
-
-    // var infowindow = new google.maps.InfoWindow({
-    //     content: 'Change the zoom level',
-    //     position: latlng
-    // });
-    // infowindow.open(map);
-
-    // google.maps.event.addListener(map, 'zoom_changed', function () {
-    //     var zoomLevel = map.getZoom();
-    //     map.setCenter(latlng);
-    //     infowindow.setContent('Zoom: ' + zoomLevel);
-
-    //     google.maps.event.addDomListener(window, 'load', initialize);
-    // });
-    //
-    //
-    //
-    //
-    // $('#buttonz').click
-
-    function showAlert() {
-        $('#popup').modal({
-            keyboard: false
-
-        });
-    };
-    //google.maps.event.addDomListener(map, 'click', showAlert);
 });

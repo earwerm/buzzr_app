@@ -1,10 +1,31 @@
+TODO LIST:
+
+7/8/13
+
+- Create home page for new users with basic intro and call to action. (MC)
+- Convert existing reg/sign into modal (MC)
+- UI Colour scheme (MC)
+- Update placeholder to include location format (MC)
+- Connect reg and sign in buttons (MC)
+---
+- Create floating div with list of results, that states the name of the current view (TM)
+- Error handling (TM)
+- Data validation (TM)
+- Jasmine test (TM)
+---
+- Takes users current location as search result (SM)
+- Map colour scheme (SM)
+- Select logo that works with map background(SM)
+
+
+
+-------------------------------
 Desired layout features:
-Use MODAL
+Use MODAL (DONE)
 
 Desired Features overall:
-
 - Create floating div that shows broader location of map;
-- upon login, user can see search results from previous search
+- Upon login, user can see search results from previous search
 
 TODO:
 instagram.js
@@ -18,9 +39,7 @@ instagram.js
 - integrate another API ala YELP,
 
 TIPS:
-
 You can detect iPhone and Android devices by inspecting the navigator.userAgent property within the DOM:
-
 
 STEPS:
 
@@ -28,24 +47,6 @@ STEPS:
 2. get id (traverse dom), make it available as a variable
 3. hTTParty request for ID : media
 4. publish media in a div
+
 OPTIONAL extras:
 - Create a div with a list of ID's, name and image;
-
-
-
-7/8/13
-
-- Create home page for new users with basic intro and call to action. (MC)
-- Convert existing reg/sign into modal (MC)
-- UI Colour scheme (MC)
-- Update placeholder to include location format (MC)
----
-- Connect reg and sign in buttons (TM)
-- Create floating div with list of results, that states the name of the current view (TM)
-- Error handling (TM)
-- Data validation (TM)
-- Jasmine test (TM)
----
-- Takes users current location as search result (SM)
-- Map colour scheme (SM)
-- Select logo that works with map background(SM)

@@ -1,19 +1,24 @@
-<!-- nav bar for landing page -->
-<div class="navbar navbar-fixed-top">
-<!--  HELP: cant get text to color white -->
-  <a href="#" class="navbar-brand">BUZZR.com.au</a>
-  <div class=" buttons col-lg-8">
-    <p>
-      <button type="button" class="btn btn-primary btn-large ">Register</button>
-      <button type="button" class="btn btn-primary btn-large ">Sign In</button>
-    </p>
+<div class="container">
+  <div class="navbar navbar-fixed-top">
+  <!-- nav bar for landing page -->
+    <a href="#" class="navbar-brand">BUZZR.com.au</a>
+    <!--  HELP: cant get text to color white -->
+    <!-- input form for address data -->
+<div class="col-lg-8"><%= render :partial => 'form' %></div>
+    <div class="buttons col-lg-8">
+      <p>
+        <button type="button" class="btn btn-primary btn-large ">Register</button>
+        <button type="button" class="btn btn-primary btn-large ">Sign In</button>
+      </p>
+    </div>
+    <!-- <span class="glyphicon glyphicon-home"></span>-->
+    <!-- HELP: GLYPHICON DOESNT WORK -->
   </div>
-<!-- <span class="glyphicon glyphicon-home"></span>-->
-<!-- HELP: GLYPHICON DOESNT WORK -->
- </div>
-<div class= col-lg-6>
-<!-- input form for address data -->
-<%= render :partial => 'form' %>
-<!-- renders map partial -->
-<%= render :partial => 'map' %>
+  <div class="col-lg-8">
+    <!-- renders map partial -->
+    <%= render :partial => 'map' %>
+  </div>
+  <div class="col-lg-4 list_results">
+    <%= render :partial => 'list' %>
+  </div>
 </div>
