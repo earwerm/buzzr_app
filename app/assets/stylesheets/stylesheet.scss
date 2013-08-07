@@ -1,0 +1,104 @@
+/* UNIVERSAL COLOURS */
+
+$orange: #E13E06;
+$green: #2ECC71;
+$blue: #4099FF;
+$darkpink: #D9014F;
+$mould: #A9AB19;
+$white: #fff;
+$red: #FF0000;
+$yellow: #EFAE1B;
+$pink: #EE3246;
+$lightpink: #E86275;
+$black: #000;
+
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #381B07;
+}
+
+<<<<<<< HEAD
+.navbar {
+  background-color: #381B07;
+  background: url('/assets/bee_bg.jpg')repeat;
+  height: auto;
+  color: #381B07;
+  z-index: 1;
+  display: block;
+  border: solid #381B07;
+=======
+.navbar{
+background: $darkpink;
+height: 50px;
+list-style: none;
+color: white;
+display: inline-block;
+>>>>>>> tarun
+}
+
+.form-control col-lg-10 {
+  padding-top: auto;
+  color: #381B07;
+  border: 1px solid #381B07;
+}
+.navbar-text pull-right {
+  font-size: 20%;
+}
+
+.navbar-brand {
+  color: #381B07;
+  font-size: 250%;
+}
+
+h1, h4, .form-group {
+ color: #381B07;
+ text-align: center;
+}
+
+.btn {
+ color: #381B07;
+}
+
+#map_canvas {
+<<<<<<< HEAD
+  height: 103%;
+  width: 100%;
+  border: solid #381B07;
+  position: absolute;
+  padding-top: 45px;
+}
+
+.navbar-toggle .icon-bar {
+  border: 1px solid #381B07;
+  background-color: #aaa;
+  }
+
+.navbar-toggle {
+  border: 1px solid #381B07;
+  }
+
+#myModal {
+  background-color: #aaa;
+}
+
+.modal-header, .modal-footer {
+  color: #EFAE1B;
+  background-color: #381B07;
+  margin: 0;
+  text-align: center;
+  border: none;
+}
+
+.modal-body {
+  background-color: #EFAE1B;
+  border: none;
+}
+=======
+  height: 650px;
+  width: 1200px;
+  border: solid $darkpink;
+  margin: 80px;
+}
+>>>>>>> tarun
