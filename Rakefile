@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-P3::Application.load_tasks
+BuzzrApp::Application.load_tasks

@@ -15,4 +15,4 @@ class Location < ActiveRecord::Base
   geocoded_by :address
   attr_accessible :latitude, :longitude,
   after_validation :geocode, :if => lambda{ |obj| obj.address_changed? }
-# geocode gem is used here, it requires additional address column in the locations table
+end

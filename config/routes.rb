@@ -1,5 +1,6 @@
-P3::Application.routes.draw do
+BuzzrApp::Application.routes.draw do
   root :to => 'home#index'
+
   resources :users, :only => [:index, :new, :create]
   resources :locations, :only => [:index, :create]
     #collection do
@@ -15,7 +16,6 @@ P3::Application.routes.draw do
 
   get '/photo/:id/' => 'landing#photo'
   get '/landing' => 'landing#index'
-
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'

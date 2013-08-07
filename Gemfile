@@ -10,11 +10,8 @@ gem 'haml'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'instagram'
-
 gem 'geocoder'
-
 gem 'haml'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
