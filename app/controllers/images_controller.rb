@@ -7,6 +7,5 @@ class ImagesController < ApplicationController
   end
 
   def show
-    @image
   end
 end

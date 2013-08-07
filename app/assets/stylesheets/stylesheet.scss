@@ -19,6 +19,7 @@ body {
   background-color: #381B07;
 }
 
+<<<<<<< HEAD
 .navbar {
   background-color: #381B07;
   background: url('/assets/bee_bg.jpg')repeat;
@@ -27,6 +28,14 @@ body {
   z-index: 1;
   display: block;
   border: solid #381B07;
+=======
+.navbar{
+background: $darkpink;
+height: 50px;
+list-style: none;
+color: white;
+display: inline-block;
+>>>>>>> tarun
 }
 
 .form-control col-lg-10 {
@@ -53,6 +62,7 @@ h1, h4, .form-group {
 }
 
 #map_canvas {
+<<<<<<< HEAD
   height: 103%;
   width: 100%;
   border: solid #381B07;
@@ -85,3 +95,10 @@ h1, h4, .form-group {
   background-color: #EFAE1B;
   border: none;
 }
+=======
+  height: 650px;
+  width: 1200px;
+  border: solid $darkpink;
+  margin: 80px;
+}
+>>>>>>> tarun

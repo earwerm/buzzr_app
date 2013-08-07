@@ -3,15 +3,16 @@ BuzzrApp::Application.routes.draw do
 
   resources :users, :only => [:index, :new, :create]
   resources :images, :only => [:index, :show, :new]
-  resources :locations, :only => [:index, :new, :create]
+  resources :locations, :only => [:index, :new, :create] do
+  end
 
+  get '/map' => 'home#map'
+  get '/points/:locale' => 'home#points'
+
+  get '/photo/:id/' => 'landing#photo'
+  get '/landing' => 'landing#index'
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
-
-  #get '/points/:locale' => 'home#points'
-  #get '/landing' => 'landing#index'
-  #get '/map' => 'home#map'
-
 
 end
