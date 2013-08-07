@@ -16,7 +16,6 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  padding-top: 80px;
   font-family: Helvetica Neue, "Helvetica", Arial, Times New Roman;
   background-color: #381B07;
 }
@@ -24,7 +23,6 @@ body {
 .navbar {
   background-color: #381B07;
   background: url('/assets/bee_bg.jpg')repeat;
-  height: auto;
   color: #381B07;
   z-index: 1;
   display: block;
@@ -32,7 +30,7 @@ body {
 }
 
 .form-control col-lg-10 {
-  padding-top: auto;
+
   color: #381B07;
   border: 1px solid #381B07;
 }
@@ -43,9 +41,10 @@ body {
 .navbar-brand {
   color: #381B07;
   font-size: 250%;
+  float: middle;
 }
 
-h1, h4, .form-group {
+h1, h4 {
  color: #381B07;
  text-align: center;
 }
@@ -54,13 +53,14 @@ h1, h4, .form-group {
  color: #381B07;
 }
 
-#map_canvas {
+/*#map_canvas {
   height: 103%;
   width: 100%;
   border: solid #381B07;
   position: absolute;
   padding-top: 45px;
 }
+*/
 
 .navbar-toggle .icon-bar {
   border: 1px solid #381B07;
