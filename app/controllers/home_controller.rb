@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   def index
+
   end
+
 
 # takes the form data from form partial on homepath
   def points
@@ -13,5 +15,10 @@ class HomeController < ApplicationController
     @result = HTTParty.get url
 # makes the json data available for ajax
     render :json => @result
+
+end
+
+  def map
+
   end
 end
