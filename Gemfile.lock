@@ -68,9 +68,18 @@ GEM
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
+<<<<<<< HEAD
     geocoder (1.1.8)
     haml (4.0.3)
       tilt
+=======
+<<<<<<< HEAD
+    geocoder (1.1.8)
+=======
+    haml (4.0.3)
+      tilt
+>>>>>>> aebcfa96e91ae37e4959a77778b5a3568a2079ef
+>>>>>>> 5071e94ac7a0dd8464f6ec23c07b81e16581b4ad
     hashie (2.0.5)
     hike (1.2.3)
     httparty (0.11.0)
@@ -187,6 +196,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   bcrypt-ruby (~> 3.0.0)
+<<<<<<< HEAD
   better_errors
   binding_of_caller
   coffee-rails (~> 3.2.1)
@@ -194,6 +204,14 @@ DEPENDENCIES
   geocoder
   haml
   httparty
+=======
+  coffee-rails (~> 4.0.0)
+<<<<<<< HEAD
+  geocoder
+=======
+  haml
+>>>>>>> aebcfa96e91ae37e4959a77778b5a3568a2079ef
+>>>>>>> 5071e94ac7a0dd8464f6ec23c07b81e16581b4ad
   instagram
   jquery-rails
   machinist (>= 2.0.0.beta2)
