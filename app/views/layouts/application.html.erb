@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>P3</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>Buzzr (Project 2)</title>
   <%= javascript_include_tag "application" %>
+  <link href="assets/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="assets/bootstrap.css" rel="stylesheet">
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
 <!-- GOOGLE MAPS API SCRIPT with ID from bash_profile appended -->
 <script type="text/javascript"
@@ -11,6 +13,11 @@
   </script>
 </head>
 <body>
-<%= yield %>
+  <%= render :partial => 'layouts/nav' %>
+  <%= render :partial => 'layouts/body' %>
+  <%= render :partial => 'layouts/footer' %>
+
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/assets/bootstrap.min.js"></script>
 </html>

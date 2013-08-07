@@ -61,3 +61,4 @@ $(document).ready(function () {
   // displays map with sydney cbd as location upon document loading
   display_map(-33.89336, 151.217167, 13);
 });
+

@@ -16,17 +16,31 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  padding-top: 80px;
-  font-family: Helvetica Neue, "Helvetica", Arial, Times New Roman;
-  background: $yellow;
+  background-color: #381B07;
 }
 
-.navbar{
-background: $darkpink;
-height: 88px;
-list-style: none;
-color: white;
-display: inline-block;
+.navbar {
+  background-color: #381B07;
+  background: url('/assets/bee_bg.jpg')repeat;
+  height: auto;
+  color: #381B07;
+  z-index: 1;
+  display: block;
+  border: solid #381B07;
+}
+
+.form-control col-lg-10 {
+  padding-top: auto;
+  color: #381B07;
+  border: 1px solid #381B07;
+}
+.navbar-text pull-right {
+  font-size: 20%;
+}
+
+.navbar-brand {
+  color: #381B07;
+  font-size: 250%;
 }
 
 h1, h3, .form-group {
@@ -34,12 +48,23 @@ h1, h3, .form-group {
 }
 
 .btn {
- color: $darkpink;
+ color: #381B07;
 }
 
 #map_canvas {
-  height: 650px;
-  width: 1200px;
-  border: solid $darkpink;
-  margin: 80px;
+  height: 103%;
+  width: 100%;
+  border: solid #381B07;
+  position: absolute;
+  padding-top: 45px;
 }
+
+.navbar-toggle .icon-bar {
+  border: 1px solid #381B07;
+  background-color: #aaa;
+  }
+
+.navbar-toggle {
+  border: 1px solid #381B07;
+
+  }
