@@ -48,6 +48,11 @@ $brown: #381B07;
   border: 1px solid $brown;
   }
 
+.btn btn-danger {
+  height: auto;
+  margin: auto;
+}
+
 /*-----Modal STYLINGS----*/
 
 .modal-header, .modal-footer, .modal-header h4 {
@@ -122,4 +127,5 @@ body {
 .row1 input {
   display: block;
   margin-left: 50px;
+
 }
