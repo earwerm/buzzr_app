@@ -12,27 +12,17 @@ $pink: #EE3246;
 $lightpink: #E86275;
 $black: #000;
 
-/*body {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-family: Helvetica Neue, "Helvetica", Arial, Times New Roman;
-  background-color: #381B07;
-}*/
 
+
+/*--------NAVBAR STYLINGS*/
 .navbar {
   background-color: #381B07;
   background: url('/assets/bee_bg.jpg')repeat;
   color: #381B07;
+  height: auto;
   z-index: 1;
   display: block;
   border: solid #381B07;
-}
-
-.form-control col-lg-10 {
-
-  color: #381B07;
-  border: 1px solid #381B07;
 }
 .navbar-text pull-right {
   font-size: 20%;
@@ -44,27 +34,11 @@ $black: #000;
   float: middle;
 }
 
-h1, h4 {
- color: #381B07;
- text-align: center;
+.form-control col-lg-10 {
+  color: #381B07;
+  border: 1px solid #381B07;
 }
 
-.btn {
- color: #381B07;
-}
-
-
-#map_canvass {
-  height: 400px;
-/*#map_canvas {
-  height: 103%;
-  width: 100%;
-  border: solid #381B07;
-  position: absolute;
-  padding-top: 45px;
-}
-*/
-}
 .navbar-toggle .icon-bar {
   border: 1px solid #381B07;
   background-color: #aaa;
@@ -74,10 +48,13 @@ h1, h4 {
   border: 1px solid #381B07;
   }
 
-/*#myModal {
-  background-color: #aaa;
+.navbar-form {
+  position: relative;
 }
-*/
+
+/*----------------------*/
+
+/*--------Modal STYLINGS*/
 .modal-header, .modal-footer {
   color: #EFAE1B;
   background-color: #381B07;
@@ -91,13 +68,60 @@ h1, h4 {
   border: none;
 }
 
+
+/*----------------------*/
+
+h1, h4 {
+ color: #381B07;
+ text-align: center;
+}
+
+.btn {
+ color: #381B07;
+}
+
+#map_canvass {
+  height: 550px;
+}
+
 .address_form {
   display: inline-block;
 }
 
-.list_results {
-min-height: 650px;
-min-width: 100px;
-border: solid $darkpink;
-margin: 80px;
+
+
+
+body {
+  margin: 0;
 }
+
+#container {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  top: 1px;
+  left: 80px;
+  font-size: 110%;
+}
+
+#search {
+  font-size: 110%;
+}
+
+
+
+/*#map_canvas {
+  height: 103%;
+  width: 100%;
+  border: solid #381B07;
+  position: absolute;
+  padding-top: 45px;
+}
+*/
+
+/*#myModal {
+  background-color: #aaa;
+}
+*/

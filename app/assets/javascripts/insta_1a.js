@@ -82,9 +82,10 @@ var add_marker = function (lat, long, title, id) {
         map: map,
         title: title,
         icon: '/assets/instagram-shadow.png'
+
+// user clicks on marker, it listens for id and runs inforender function
     });
-    // pushes the marker data into empty array marker_list
-    // marker_list.push(marker);
+    marker_list.push(marker);    // pushes the marker data into empty array marker_list
     marker.setValues({
         id: id
     });

@@ -19,6 +19,15 @@ TODO LIST:
 
 
 
+TODO:
+
+- landing header footer sortout
+
+ONCE COMPLETE:
+
+- remove extraneous files
+
+
 -------------------------------
 Desired layout features:
 Use MODAL (DONE)
@@ -56,6 +65,13 @@ STEPS:
 # 3. feed lat lng to HTTParty request
 # 4. pass returned JSON object to AJAX for rendering via draw_points function
 # 5. integrate google maps into the draw_points function
+
+COLLECTION NOTES:
+
+    #collection do
+    #  get :???
+    #end
+
 
 OPTIONAL extras:
 - Create a div with a list of ID's, name and image;
