@@ -39,7 +39,7 @@ $(document).ready(function () {
                    if(t==="timeout") {
                     alert("got timeout");
                 } else {
-                    alert(t);
+                    alert("sorry, Instagram had a hiccup, try again "+t);
                 }
         });
     };

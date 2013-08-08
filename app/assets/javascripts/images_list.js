@@ -4,7 +4,8 @@ var listrender = function(l){
   var locale = $('#addresses').val();
   console.log('listrender '+'locale: '+locale);
   $('#images_listrender').append('<li><a data-id="' + l.id + '" href="#">' + l.name + '</a></li>');
-  $('#search_results').text('Buzzing Hives in '+locale);
+  // $('#thumbnail').attr('src', data[0].images.thumbnail.url);
+  $('#search_results').text('buzzing hives of '+locale);
 };
 
 $(document).ready( function () {
