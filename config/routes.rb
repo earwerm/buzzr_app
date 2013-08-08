@@ -6,9 +6,6 @@ BuzzrApp::Application.routes.draw do
   resources :location, :only => [:index, :new, :create] do
   end
 
-# modal sign in path
-
-
 # locations
   # get '/map' => 'locations#map'
   get '/points/:locale' => 'locations#points'
@@ -20,5 +17,4 @@ BuzzrApp::Application.routes.draw do
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
-
 end

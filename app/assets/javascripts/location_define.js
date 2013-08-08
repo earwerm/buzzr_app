@@ -24,9 +24,9 @@ var display_map = function (lat, long, zoom) {
 
     var styles = [{
         stylers: [{
-            hue: "#00ffe6"
+            hue: "#EFAE1B"
         }, {
-            saturation: -20
+            saturation: -10
         }]
     }, {
         featureType: "road",
@@ -40,7 +40,7 @@ var display_map = function (lat, long, zoom) {
         featureType: "road",
         elementType: "labels",
         stylers: [{
-            visibility: "off"
+            visibility: "on"
         }]
     }, {
         featureType: "road",
@@ -50,21 +50,23 @@ var display_map = function (lat, long, zoom) {
         }, {
             gamma: 1
         }, {
+            color: "#381B07"
+        }, {
             visibility: "simplified"
         }, {
-            weight: 1.2
+            weight: 1.5
         }]
     }, {
         featureType: "water",
-        elementType: "geometry.fill",
+        elementType: "geometry",
         stylers: [{
-            inverse_lightness: false
+            color: "#4099FF"
         }, {
             gamma: 1
         }, {
             visibility: "simplified"
         }, {
-            weight: 1.2
+            weight: 1
         }]
 
     }]
