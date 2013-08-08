@@ -1,5 +1,24 @@
 TODO LIST:
 
+8/8/13
+
+TM
+- error handling + validation bollocks
+- responsive map_canvass (TRIED, not yet)
+- enter handle for address bar
+- header: address.val(); (DONE!)
+- linkto button
+
+MC
+- login validation
+- modal header and footer styling inc title
+- navbar styling
+
+SM
+- map canvas styling
+- godaddy.com uploading
+
+
 7/8/13
 
 - Create home page for new users with basic intro and call to action. (MC)
@@ -75,3 +94,12 @@ COLLECTION NOTES:
 
 OPTIONAL extras:
 - Create a div with a list of ID's, name and image;
+
+
+GUIDE:
+
+- ajax handler
+create hidden div, animated spinner
+show div with click event
+hid when ajax returns done event
+

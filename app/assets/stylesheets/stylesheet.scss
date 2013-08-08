@@ -60,7 +60,7 @@ $brown: #381B07;
 
 /*-----Modal STYLINGS----*/
 
-.modal-header, .modal-footer {
+.modal-header, .modal-footer, .modal-header h4 {
   color: #EFAE1B;
   background-color: $brown;
   margin: 0;
@@ -83,6 +83,8 @@ h1, h4 {
  color: $brown;
  text-align: center;
 }
+
+
 
 .btn {
  color: $brown;

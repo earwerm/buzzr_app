@@ -1,8 +1,10 @@
 // renders the list of markers in 'images_list' div
 var marker_list = [];
 var listrender = function(l){
-  console.log('listrender');
+  var locale = $('#addresses').val();
+  console.log('listrender '+'locale: '+locale);
   $('#images_listrender').append('<li><a data-id="' + l.id + '" href="#">' + l.name + '</a></li>');
+  $('#search_results').text('Buzzing Hives in '+locale);
 };
 
 $(document).ready( function () {
