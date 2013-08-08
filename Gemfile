@@ -12,6 +12,7 @@ gem 'instagram'
 gem 'geocoder'
 gem 'haml'
 gem 'sass'
+gem 'client_side_validations'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
