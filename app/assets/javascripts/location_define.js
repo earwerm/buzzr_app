@@ -54,11 +54,11 @@ var display_map = function (lat, long, zoom) {
         }, {
             visibility: "simplified"
         }, {
-            weight: 1.2
+            weight: 1.5
         }]
     }, {
         featureType: "water",
-        elementType: "geometry.fill",
+        elementType: "geometry",
         stylers: [{
             color: "#4099FF"
         }, {
@@ -66,7 +66,7 @@ var display_map = function (lat, long, zoom) {
         }, {
             visibility: "simplified"
         }, {
-            weight: 1.2
+            weight: 1
         }]
 
     }]
