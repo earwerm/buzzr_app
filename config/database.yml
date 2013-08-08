@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: buzzr_app_development
   pool: 5
-  username: michaelcorrea
+  username: MOOKBOOK13
   host: localhost
   password:
 

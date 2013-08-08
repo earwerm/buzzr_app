@@ -1,6 +1,6 @@
 %div.row
   %div.large-3.columns
-    = form_for @user, :remote => true do |f|
+    = form_for @user do |f|
       = f.label :name
       = f.text_field :name, :autofocus => true
       = f.label :email

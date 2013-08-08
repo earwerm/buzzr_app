@@ -27,7 +27,7 @@ $(document).ready(function () {
     };
 });
 
- // renders the marker info in #map_canvas?
+ // renders the marker info to image_list
 var inforender = function (marker) {
     var id = marker.id; // Get the ID from marker
     console.log('The ID for this is really: ' + id);
@@ -43,7 +43,7 @@ var inforender = function (marker) {
         $('#images_list_modal').modal('hide')
         $('.modal img').attr('src', photo.data[0].images.low_resolution.url);
         $('.modal-footer p').text(photo.data[0].caption.text);
-        $('.modal-title').text(photo.data[0].location.name);
+        $('.modal-title h4').text(photo.data[0].location.name);
         $('#image_result').modal({
             keyboard: false
         });

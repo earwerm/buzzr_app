@@ -37,6 +37,8 @@ group :development, :test do
   gem 'simplecov'
   gem 'machinist', '>= 2.0.0.beta2'
   gem 'factory_girl_rails', '~> 4.0'
+  gem 'jasmine'
+  gem 'thin'
 
   gem 'annotate'
   gem 'quiet_assets'

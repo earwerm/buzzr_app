@@ -80,7 +80,8 @@ h1, h4 {
 }
 
 #map_canvass {
-  height: 550px;
+  height: 550px !important;
+  max-width: 100%;
 }
 
 .address_form {
@@ -112,5 +113,9 @@ map_form {
 
 .new_user input {
   display: block;
+}
+
+.row {
+  margin-left: 15 px;
 }
 
