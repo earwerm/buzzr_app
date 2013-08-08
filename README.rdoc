@@ -4,7 +4,7 @@ TODO LIST:
 
 TM
 - error handling + validation bollocks
-- responsive map_canvass
+- responsive map_canvass (TRIED, not yet)
 - enter handle for address bar
 - header: address.val(); (DONE!)
 - linkto button

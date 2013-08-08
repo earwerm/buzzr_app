@@ -55,7 +55,7 @@ $black: #000;
 
 /*--------Modal STYLINGS*/
 
-.modal-header, .modal-footer {
+.modal-header, .modal-footer, .modal-header h4 {
   color: #EFAE1B;
   background-color: #381B07;
   margin: 0;
@@ -74,6 +74,8 @@ h1, h4 {
  color: #381B07;
  text-align: center;
 }
+
+
 
 .btn {
  color: #381B07;
