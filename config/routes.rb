@@ -1,10 +1,13 @@
 BuzzrApp::Application.routes.draw do
   root :to => 'home#index'
 
-  resources :user, :only => [:index, :new, :create]
+  resources :users, :only => [:index, :new, :create]
   resources :images, :only => [:index, :show, :new]
   resources :location, :only => [:index, :new, :create] do
   end
+
+# modal sign in path
+
 
 # locations
   # get '/map' => 'locations#map'

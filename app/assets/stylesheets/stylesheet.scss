@@ -12,8 +12,6 @@ $pink: #EE3246;
 $lightpink: #E86275;
 $black: #000;
 
-
-
 /*--------NAVBAR STYLINGS*/
 .navbar {
   background-color: #381B07;
@@ -24,6 +22,7 @@ $black: #000;
   display: block;
   border: solid #381B07;
 }
+
 .navbar-text pull-right {
   font-size: 20%;
 }
@@ -55,6 +54,7 @@ $black: #000;
 /*----------------------*/
 
 /*--------Modal STYLINGS*/
+
 .modal-header, .modal-footer {
   color: #EFAE1B;
   background-color: #381B07;
@@ -67,7 +67,6 @@ $black: #000;
   background-color: #EFAE1B;
   border: none;
 }
-
 
 /*----------------------*/
 
@@ -88,9 +87,6 @@ h1, h4 {
   display: inline-block;
 }
 
-
-
-
 body {
   margin: 0;
 }
@@ -99,7 +95,7 @@ body {
   position: relative;
 }
 
-form {
+map_form {
   position: absolute;
   top: 1px;
   left: 80px;
@@ -110,18 +106,11 @@ form {
   font-size: 110%;
 }
 
-
-
-/*#map_canvas {
-  height: 103%;
-  width: 100%;
-  border: solid #381B07;
-  position: absolute;
-  padding-top: 45px;
+.new_user {
+  margin-left: 30px;
 }
-*/
 
-/*#myModal {
-  background-color: #aaa;
+.new_user input {
+  display: block;
 }
-*/
+
