@@ -35,7 +35,8 @@ var styles = [{
     }, {
         saturation: -10
     }]
-}, {
+
+    }, {
     featureType: "road",
     elementType: "geometry",
     stylers: [{
@@ -43,13 +44,15 @@ var styles = [{
     }, {
         visibility: "simplified"
     }]
-}, {
+
+    }, {
     featureType: "road",
     elementType: "labels",
     stylers: [{
         visibility: "on"
     }]
-}, {
+
+    }, {
     featureType: "road",
     elementType: "geometry.fill",
     stylers: [{
@@ -63,7 +66,8 @@ var styles = [{
     }, {
         weight: 1.5
     }]
-}, {
+
+    }, {
     featureType: "water",
     elementType: "geometry",
     stylers: [{
@@ -77,6 +81,7 @@ var styles = [{
     }]
 
 }]
+
 map.setOptions({
     styles: styles
 });
