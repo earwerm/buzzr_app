@@ -48,5 +48,14 @@ STEPS:
 3. hTTParty request for ID : media
 4. publish media in a div
 
+# step by step
+# 1. create form to enter location => locale = params[:locale]
+# 2. use geocode to spit out lat lng
+#     lat = GEOCODEBLAH
+#     lng = GEOCODEBLAH
+# 3. feed lat lng to HTTParty request
+# 4. pass returned JSON object to AJAX for rendering via draw_points function
+# 5. integrate google maps into the draw_points function
+
 OPTIONAL extras:
 - Create a div with a list of ID's, name and image;

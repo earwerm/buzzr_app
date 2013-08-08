@@ -12,14 +12,14 @@ $pink: #EE3246;
 $lightpink: #E86275;
 $black: #000;
 
-body {
+/*body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding-top: 80px;
   font-family: Helvetica Neue, "Helvetica", Arial, Times New Roman;
   background-color: #381B07;
-}
+}*/
 
 .navbar {
   background-color: #381B07;
@@ -54,8 +54,8 @@ h1, h4, .form-group {
  color: #381B07;
 }
 
-#map_canvas {
-  height: 103%;
+#map_canvass {
+  height: 400px;
   width: 100%;
   border: solid #381B07;
   position: absolute;
