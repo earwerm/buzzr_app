@@ -1,4 +1,4 @@
-= link_to('Add', new_user_path, :remote => true, :class => 'button radius tiny success')
-#user_form
-%table#users
+%div.users_row
+  %table#users
   = render(:partial => 'users')
+  = link_to('Sign up a friend', new_user_path, :class => 'btn btn-primary')

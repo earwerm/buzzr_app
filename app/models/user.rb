@@ -15,6 +15,5 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation
   has_many :locations
 
-  validates_presence_of :email
-  validates_presence_of :name
+
 end
