@@ -10,15 +10,12 @@
 <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE'] %>&sensor=true">
   </script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"></script>
 <script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
 </head>
 <body>
 
-
-
   <%= render :partial => 'layouts/nav' %>
-
-
 
   <%= render :partial => 'layouts/body' %>
 
