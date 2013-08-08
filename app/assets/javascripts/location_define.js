@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // displays map with GEOCODEip setting location upon document loading
-    display_map(geoip_latitude(), geoip_longitude(), 12);
+    display_map(geoip_latitude(), geoip_longitude(), 16);
 });
 
 // declares map and canvas variables, makes them globally available
@@ -24,9 +24,9 @@ var display_map = function (lat, long, zoom) {
 
     var styles = [{
         stylers: [{
-            hue: "#4099FF"
+            hue: "#EFAE1B"
         }, {
-            saturation: -20
+            saturation: -10
         }]
     }, {
         featureType: "road",
@@ -40,7 +40,7 @@ var display_map = function (lat, long, zoom) {
         featureType: "road",
         elementType: "labels",
         stylers: [{
-            visibility: "off"
+            visibility: "on"
         }]
     }, {
         featureType: "road",
@@ -49,6 +49,8 @@ var display_map = function (lat, long, zoom) {
             invert_lightness: true
         }, {
             gamma: 1
+        }, {
+            color: "#381B07"
         }, {
             visibility: "simplified"
         }, {
