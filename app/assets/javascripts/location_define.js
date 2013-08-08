@@ -22,57 +22,64 @@ var display_map = function (lat, long, zoom) {
     };
     map = new google.maps.Map(canvas, mapOptions);
 
-    var styles = [{
-        stylers: [{
-            hue: "#EFAE1B"
-        }, {
-            saturation: -10
-        }]
-    }, {
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [{
-            lightness: 100
-        }, {
-            visibility: "simplified"
-        }]
-    }, {
-        featureType: "road",
-        elementType: "labels",
-        stylers: [{
-            visibility: "on"
-        }]
-    }, {
-        featureType: "road",
-        elementType: "geometry.fill",
-        stylers: [{
-            invert_lightness: true
-        }, {
-            gamma: 1
-        }, {
-            color: "#381B07"
-        }, {
-            visibility: "simplified"
-        }, {
-            weight: 1.5
-        }]
-    }, {
-        featureType: "water",
-        elementType: "geometry",
-        stylers: [{
-            color: "#4099FF"
-        }, {
-            gamma: 1
-        }, {
-            visibility: "simplified"
-        }, {
-            weight: 1
-        }]
+    //autocomplete of search text field
+    var input = document.getElementById('addresses');
+    var options = {
+        types: ['geocode'],
+    };
+    autocomplete = new google.maps.places.Autocomplete(input, options);
 
+var styles = [{
+    stylers: [{
+        hue: "#EFAE1B"
+    }, {
+        saturation: -10
     }]
-    map.setOptions({
-        styles: styles
-    });
+}, {
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [{
+        lightness: 100
+    }, {
+        visibility: "simplified"
+    }]
+}, {
+    featureType: "road",
+    elementType: "labels",
+    stylers: [{
+        visibility: "on"
+    }]
+}, {
+    featureType: "road",
+    elementType: "geometry.fill",
+    stylers: [{
+        invert_lightness: true
+    }, {
+        gamma: 1
+    }, {
+        color: "#381B07"
+    }, {
+        visibility: "simplified"
+    }, {
+        weight: 1.5
+    }]
+}, {
+    featureType: "water",
+    elementType: "geometry",
+    stylers: [{
+        color: "#4099FF"
+    }, {
+        gamma: 1
+    }, {
+        visibility: "simplified"
+    }, {
+        weight: 1
+    }]
+
+}]
+map.setOptions({
+    styles: styles
+});
 };
 
 // append marker to map
@@ -85,9 +92,9 @@ var add_marker = function (lat, long, title, id) {
         title: title,
         icon: '/assets/instagram-shadow.png'
 
-// user clicks on marker, it listens for id and runs inforender function
+        // user clicks on marker, it listens for id and runs inforender function
     });
-    marker_list.push(marker);    // pushes the marker data into empty array marker_list
+    marker_list.push(marker); // pushes the marker data into empty array marker_list
     marker.setValues({
         id: id
     });

@@ -17,6 +17,8 @@ $(document).ready(function () {
             return false;
         });
 
+
+
     var draw_points = function (locale) {
         $.ajax({
             url: '/points/' + locale
