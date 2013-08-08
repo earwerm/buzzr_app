@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // displays map with GEOCODEip setting location upon document loading
-    display_map(geoip_latitude(), geoip_longitude(), 16);
+    display_map(geoip_latitude(), geoip_longitude(), 12);
 });
 
 // declares map and canvas variables, makes them globally available
@@ -24,7 +24,7 @@ var display_map = function (lat, long, zoom) {
 
     var styles = [{
         stylers: [{
-            hue: "#00ffe6"
+            hue: "#4099FF"
         }, {
             saturation: -20
         }]
@@ -58,7 +58,7 @@ var display_map = function (lat, long, zoom) {
         featureType: "water",
         elementType: "geometry.fill",
         stylers: [{
-            inverse_lightness: false
+            color: "#4099FF"
         }, {
             gamma: 1
         }, {

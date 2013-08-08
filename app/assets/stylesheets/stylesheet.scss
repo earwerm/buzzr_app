@@ -12,7 +12,11 @@ $pink: #EE3246;
 $lightpink: #E86275;
 $black: #000;
 
-/*--------NAVBAR STYLINGS*/
+$brown: #381B07;
+
+
+/*----NAVBAR STYLINGS-----*/
+
 .navbar {
   background-color: #381B07;
   background: url('/assets/bee_bg.jpg')repeat;
@@ -51,9 +55,7 @@ $black: #000;
   position: relative;
 }
 
-/*----------------------*/
-
-/*--------Modal STYLINGS*/
+/*-----Modal STYLINGS----*/
 
 .modal-header, .modal-footer {
   color: #EFAE1B;
@@ -80,7 +82,7 @@ h1, h4 {
 }
 
 #map_canvass {
-  height: 550px;
+  height: 350px;
 }
 
 .address_form {
@@ -89,6 +91,7 @@ h1, h4 {
 
 body {
   margin: 0;
+  background-color: #381B07;
 }
 
 #container {
@@ -106,11 +109,23 @@ map_form {
   font-size: 110%;
 }
 
-.new_user {
-  margin-left: 30px;
+.new_user  {
+  margin-left: 50px;
 }
 
 .new_user input {
   display: block;
 }
+
+.row1 label {
+  text-indent: 50px;
+  color: #EFAE1B;
+}
+
+.row1 input {
+  display: block;
+  margin-left: 50px;
+}
+
+
 
