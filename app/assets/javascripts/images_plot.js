@@ -47,7 +47,7 @@ $(document).ready(function () {
     $(document).ajaxStart(function(){
         $('#loading').html("<img src='/assets/bee.gif'>");
     });
-
+});
 // renders the marker info to image_list
 var inforender = function (marker) {
     var id = marker.id; // Get the ID from marker
@@ -70,4 +70,3 @@ var inforender = function (marker) {
         });
     });
 };
-});
