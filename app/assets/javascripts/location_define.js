@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // displays map with GEOCODEip setting location upon document loading
-    display_map(geoip_latitude(), geoip_longitude(), 18);
+    display_map(geoip_latitude(), geoip_longitude(), 17);
 });
 
 // declares map and canvas variables, makes them globally available
