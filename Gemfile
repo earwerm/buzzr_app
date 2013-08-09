@@ -43,10 +43,13 @@ group :development, :test do
 
   gem 'annotate'
   gem 'quiet_assets'
-  gem 'better_errors'
   # BetterErrors.editor = :sublime if defined? BetterErrors  (initializer)
   # http://localhost:3000/__better_errors (reports last exception for debugging)
   gem 'binding_of_caller'
   gem 'meta_request'
   # Add RailsPanel extension in the Chrome Web Store
+end
+
+group :development do
+  gem 'better_errors'
 end
