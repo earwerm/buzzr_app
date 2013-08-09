@@ -2,16 +2,16 @@
 <html>
 <head>
   <title>Buzzr (Project 2)</title>
-  <%= javascript_include_tag "application" %>
   <link href="assets/bootstrap-glyphicons.css" rel="stylesheet">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
 <!-- GOOGLE MAPS API SCRIPT with ID from bash_profile appended -->
 <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE'] %>&sensor=true">
-  </script>
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"></script>
+    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE'] %>&libraries=places&sensor=true">
+</script>
 <script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
+  <%= javascript_include_tag "application" %>
+
 </head>
 <body>
 

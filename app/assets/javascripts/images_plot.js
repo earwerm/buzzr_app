@@ -4,24 +4,28 @@ $(document).ready(function () {
                 console.log('address clickhandler');
                 alert('Getting info from Instagram, this may take a few seconds......');
                 var locale = $('#addresses').val();
-                // locale = locale.replace(/[\|&;\$%@"<>\(\)\+,\, ]/g, "%20");
+                locale = locale.replace(/[\|&;\$%@"<>\(\)\+,\, ]/g, "%20");
                 draw_points(locale);
                 console.log('locale=' + locale);
-                return false;
                 });
-         $('#address input').keydown(function(e) {
+         $('#addresses').keydown(function(e) {
             if (e.which === 13) {
-                $(this).trigger('click');
-                return false;
+                e.preventDefault();
+                $('#address').trigger('click');
             };
-            return false;
         });
-
+         $('form.navbar-form').submit(function (e) {
+            e.preventDefault();
+         });
+// HELP need to sort out return false
+// HELP stray curly needs auditing
     var draw_points = function (locale) {
+        console.log('drawpoints be drawing');
         $.ajax({
             url: '/points/' + locale
         }).done(function (results) {
-            // debugger;
+            console.log(results);
+            $('#loading, #images_listrender').empty();
             // iterates the add_marker function and parses the data from the json object to add_marker
             $.each(results.data, function (i, l) {
                 add_marker(l.latitude, l.longitude, l.name, l.id);
@@ -32,16 +36,17 @@ $(document).ready(function () {
             center_map(results.data[0].latitude, results.data[0].longitude);
             // instagram sometimes returns errors, this alert makes the user aware;
         }).error(function (results, t, m) {
-            //alert("error! instagram says:" + results);
-
                    if(t==="timeout") {
                     alert("got timeout");
                 } else {
-                    alert("sorry, Instagram had a hiccup, try again "+t);
+                    alert("sorry, Instagram had a hiccup. They call it a "+t+". Please try again.");
                 }
         });
     };
-});
+// runs animate gif during ajax loading events
+    $(document).ajaxStart(function(){
+        $('#loading').html("<img src='/assets/bee.gif'>");
+    });
 
 // renders the marker info to image_list
 var inforender = function (marker) {
@@ -65,3 +70,4 @@ var inforender = function (marker) {
         });
     });
 };
+});

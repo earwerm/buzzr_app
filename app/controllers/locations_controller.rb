@@ -1,4 +1,6 @@
 class LocationsController < ApplicationController
+    before_filter :ensure_logged_in , :except => [:points]
+
   def index
     @users = User.new
   end
@@ -11,6 +13,7 @@ class LocationsController < ApplicationController
     locale = Location.create( :address => params[:locale] )
     lat = locale.latitude.to_f
     lng = locale.longitude.to_f
+
 # instagram api request
     url = "https://api.instagram.com/v1/locations/search.json?lat=#{lat.round(3)}&lng=#{lng.round(3)}&client_id=efea46f4c52542348ced4c529263cf33"
 # creates an instance variable @result with the json object
