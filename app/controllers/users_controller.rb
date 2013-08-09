@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     User.create(params[:user])
     @users = User.order(:email)
     respond_to do |format|
-      format.html { redirect_to(users_path)}
+      format.html { redirect_to(root_path)}
       format.js { render :create}
     end
   end

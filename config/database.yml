@@ -42,9 +42,10 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: p3_test
+  database: buzzr_app_test
   pool: 5
   username: MOOKBOOK13
+  host: localhost
   password:
 
 # production:

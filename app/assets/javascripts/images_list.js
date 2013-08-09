@@ -1,5 +1,5 @@
 // renders the list of markers in 'images_list' div
-var marker_list = [];
+// var marker_list = [];
 var listrender = function(l){
   var locale = $('#addresses').val();
   console.log('listrender '+'locale: '+locale);

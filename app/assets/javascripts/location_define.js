@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // displays map with GEOCODEip setting location upon document loading
-    display_map(geoip_latitude(), geoip_longitude(), 18);
+    display_map(geoip_latitude(), geoip_longitude(), 12);
 });
 
 // declares map and canvas variables, makes them globally available
@@ -99,7 +99,7 @@ var add_marker = function (lat, long, title, id) {
 
         // user clicks on marker, it listens for id and runs inforender function
     });
-    marker_list.push(marker); // pushes the marker data into empty array marker_list
+    // marker_list.push(marker); // pushes the marker data into empty array marker_list
     marker.setValues({
         id: id
     });

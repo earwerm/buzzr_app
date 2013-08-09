@@ -1,3 +1,10 @@
+TODO:
+
+9/8/13
+
+- delay in server response needs an alert popup instead of initial alert;
+- map not recentering!
+
 TODO LIST:
 
 8/8/13
