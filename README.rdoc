@@ -3,3 +3,21 @@ Welcome to Buzzr, a Ruby On Rails project developed by Stephen McGillen, Tarun M
 The project was born out of the idea that people should be able to use geoloaction on google maps to see what sites or places of interest local to their position existed as identified by social media activity.
 
 The app was presented in class the morning of the due date as a working prototype with 96% test coverage having being deployed to Heroku the night previous. Unfortunately, the Heroku deployment has not lasted and it is now not available.
+
+Instructions to load buzzr_app.
+
+1. Download from github
+2. Update the database.yml file to include:
+
+test: (do the same for development)
+  adapter: postgresql
+  encoding: unicode
+  database: buzzr_app_test
+  pool: 5
+  username: (your login details for your local terminal)
+  host: localhost
+  password:
+
+3. Run rake db:create, rake db:migrate and rake db:seed (NB. seeding is optional)
+
+4. Sign up and Buzz about!
