@@ -2,4 +2,4 @@ Welcome to Buzzr, a Ruby On Rails project developed by Stephen McGillen, Tarun M
 
 The project was born out of the idea that people should be able to use geoloaction on google maps to see what sites or places of interest local to their position existed as identified by social media activity.
 
-The app was presented in class the the morning of the due date in full working order with 96% test coverage having being deployed to Heroku the night previous.
+The app was presented in class the morning of the due date as a working prototype with 96% test coverage having being deployed to Heroku the night previous. Unfortunately, the Heroku deployment has not lasted and it is now not available.
